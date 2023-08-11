@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="6_1092_VELICU_Ioana_Andreea.css"/>
+    <script type="text/javascript" src="6_1092_VELICU_Ioana_Andreea.js"></script>
+</head>
+
+<body>
+    <menu class="meniu">
+
+        <button id="btnDeseneaza">Desenează
+            <select id="deseneaza">
+                <option>--Alege forma--</option>
+                <option id="deseneazaLinie">Linie</option>
+                <option id="deseneazaElipsa">Elipsa</option>
+                <option id="deseneazaDreptunghi">Dreptunghi</option>
+            </select>
+        </button>
+
+        <button id="btnCuloaresiGrosime">Alege culoare si grosime
+            <select id="culoare">
+                <option>--Alege culaorea liniei--</option>
+                <option id="rosu">Rosu</option>
+                <option id="galben">Galben</option>
+                <option id="albastru">Albastru</option>
+                <option id="verde">Verde</option>
+                <option id="roz">Roz</option>
+                <option id="mov">Mov</option>
+            </select>
+            <select id="grosime">
+                <option>--Alege grosimea liniei--</option>
+                <option id="1pt">1pt</option>
+                <option id="1.5pt">1.5pt</option>
+                <option id="2pt">2pt</option>
+                <option id="3pt">3pt</option>
+                <option id="4pt">4pt</option>
+                <option id="5pt">5pt</option>
+                <option id="7pt">7pt</option>
+                <option id="10pt">10pt</option>
+            </select>
+        </button>
+
+        <button id="btnEditeaza">Editează
+            <select id="editCuloare">
+                <option>--Alege culaorea liniei--</option>
+                <option>Rosu</option>
+                <option>Galben</option>
+                <option>Albastru</option>
+                <option>Verde</option>
+                <option>Roz</option>
+                <option>Mov</option>
+            </select>
+            <select id="editGrosime">
+                <option>--Alege grosimea liniei--</option>
+                <option>1pt</option>
+                <option>1.5pt</option>
+                <option>2pt</option>
+                <option>3pt</option>
+                <option>4pt</option>
+                <option>5pt</option>
+                <option>7pt</option>
+                <option>10pt</option>
+            </select>
+            <select id="editFundal">
+                <option>--Alege culoarea de fundal--</option>
+                <option>Rosu</option>
+                <option>Galben</option>
+                <option>Albastru</option>
+                <option>Verde</option>
+                <option>Roz</option>
+                <option>Mov</option>
+            </select>
+        </button>
+
+        <button id="btnSalvare">Salvare</button>
+
+        <button id="btnSterge">Sterge</button>
+
+        <button id="btnMiscare">Mișcă element</button>
+
+    </menu>
+
+    <svg id="editor">
+        <line id="linie" style="display: none"></line>
+        <g id="liniiDesenate"></g>
+
+        <rect id="dreptunghi" style="display: none"></rect>
+        <g id="dreptunghiuriDesenate"></g>
+
+        <ellipse id="elipsa" style="display: none"></ellipse>
+        <g id="elipseDesenate"></g>
+    </svg>
+
+
+</body>
+
+</html>
